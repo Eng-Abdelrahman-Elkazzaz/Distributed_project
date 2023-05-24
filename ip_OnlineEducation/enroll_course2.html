@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Education - Enroll Course 2</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Online Education</h1>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="course-details">
+    <div class="container">
+      <h2>Course 2 Details</h2>
+      <img id="courseImage" src="placeholder.jpg" alt="Course 2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ligula libero. Aliquam erat volutpat. Integer bibendum malesuada lacus in vehicula. Nulla id sapien ut magna ullamcorper blandit. Integer nec est sit amet urna dictum tincidunt. Fusce consectetur nulla nec elit pretium auctor. In porttitor tortor et mauris malesuada aliquam.</p>
+      <p>Enroll in this course to learn:</p>
+      <ul>
+        <li>Topic 1</li>
+        <li>Topic 2</li>
+        <li>Topic 3</li>
+      </ul>
+    </div>
+  </section>
+
+  
+
+  <script>
+    document.getElementById('courseImage').src = sessionStorage.getItem('courseImage');
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Education - Course Details</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Online Education</h1>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="course-details" class="course-details">
+    <div class="container">
+      <h2>Course Details</h2>
+      <div class="course-info">
+        <h3 id="course-name"></h3>
+        <img id="course-image" src="" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Enroll</a>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <script>
+    window.onload = function() {
+      var courseName = decodeURIComponent(getParameterByName("courseName"));
+      var courseImage = decodeURIComponent(getParameterByName("courseImage"));
+
+      document.getElementById("course-name").textContent = courseName;
+      document.getElementById("course-image").setAttribute("src", courseImage);
+    };
+
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+  </script>
+</body>
+</html>
+

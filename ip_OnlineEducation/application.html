@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 offset-m2">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Enrollment form</span>
+            <form id="contact-form">
+              <div class="input-field">
+                <input type="text" id="name" name="name" class="validate" required>
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" name="email" class="validate" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="tel" id="phone" name="phone" class="validate" required>
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="subject" name="subject" class="validate" required>
+                <label for="subject">Subject</label>
+              </div>
+              <div class="input-field">
+                <textarea id="message" name="message" class="materialize-textarea validate" required></textarea>
+                <label for="message">Message</label>
+              </div>
+              
+              <div class="input-field">
+                <p>
+                  <label>
+                    <input type="radio" name="gender" value="male" required>
+                    <span>Male</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="female" required>
+                    <span>Female</span>
+                  </label>
+                </p>
+               
+              </div>
+              <div class="input-field">
+                <p>
+                  <label>
+                    <input type="checkbox" name="terms" class="filled-in" required>
+                    <span>I agree to the <a href="#">terms and conditions</a></span>
+                  </label>
+                </p>
+              </div>
+              <div class="center-align">
+                <button type="submit" class="btn waves-effect waves-light">Submit</button>
+              </div>
+            </form>
+            <div class="card-action center-align">
+              <div class="message">
+                Thank you for joining our course. We will get back to you soon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
